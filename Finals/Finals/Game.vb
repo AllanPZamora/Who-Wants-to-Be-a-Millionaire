@@ -43,11 +43,14 @@ Public Class Game
             Dim currentQuestion As Question = questions(currentQuestionIndex)
             TextBox1.Text = currentQuestion.Text
 
-            For i As Integer = 0 To currentQuestion.Answers.Length - 1
-                CType(Me.Controls("btnAnswer" & (i + 1)), Button).Text = currentQuestion.Answers(i)
-            Next
+            If answerButtons IsNot Nothing Then
+                For i As Integer = 0 To currentQuestion.Answers.Length - 1
+                    If i < answerButtons.Count Then
+                        answerButtons(i).Text = currentQuestion.Answers(i)
+                    End If
+                Next
+            End If
         Else
-
             MessageBox.Show("Congratulations! You've answered all questions.")
             Me.Close()
         End If
@@ -64,7 +67,7 @@ Public Class Game
         Else
             MessageBox.Show("Incorrect! Game Over.")
             Me.Close()
-            Main.Show()
+            GameOver.Show()
         End If
 
         currentQuestionIndex += 1
