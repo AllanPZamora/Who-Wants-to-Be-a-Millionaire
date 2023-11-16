@@ -22,16 +22,79 @@ Partial Class Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnAnswer1 = New System.Windows.Forms.Button()
+        Me.btnAnswer3 = New System.Windows.Forms.Button()
+        Me.btnAnswer2 = New System.Windows.Forms.Button()
+        Me.btnAnswer4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Form1
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(80, 247)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(850, 80)
+        Me.TextBox1.TabIndex = 0
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'btnAnswer1
+        '
+        Me.btnAnswer1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAnswer1.Location = New System.Drawing.Point(80, 381)
+        Me.btnAnswer1.Name = "btnAnswer1"
+        Me.btnAnswer1.Size = New System.Drawing.Size(400, 54)
+        Me.btnAnswer1.TabIndex = 1
+        Me.btnAnswer1.UseVisualStyleBackColor = True
+        '
+        'btnAnswer3
+        '
+        Me.btnAnswer3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAnswer3.Location = New System.Drawing.Point(80, 460)
+        Me.btnAnswer3.Name = "btnAnswer3"
+        Me.btnAnswer3.Size = New System.Drawing.Size(400, 54)
+        Me.btnAnswer3.TabIndex = 2
+        Me.btnAnswer3.UseVisualStyleBackColor = True
+        '
+        'btnAnswer2
+        '
+        Me.btnAnswer2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAnswer2.Location = New System.Drawing.Point(530, 381)
+        Me.btnAnswer2.Name = "btnAnswer2"
+        Me.btnAnswer2.Size = New System.Drawing.Size(400, 54)
+        Me.btnAnswer2.TabIndex = 3
+        Me.btnAnswer2.UseVisualStyleBackColor = True
+        '
+        'btnAnswer4
+        '
+        Me.btnAnswer4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAnswer4.Location = New System.Drawing.Point(530, 460)
+        Me.btnAnswer4.Name = "btnAnswer4"
+        Me.btnAnswer4.Size = New System.Drawing.Size(400, 54)
+        Me.btnAnswer4.TabIndex = 4
+        Me.btnAnswer4.UseVisualStyleBackColor = True
+        '
+        'Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(513, 450)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(1000, 600)
+        Me.Controls.Add(Me.btnAnswer4)
+        Me.Controls.Add(Me.btnAnswer2)
+        Me.Controls.Add(Me.btnAnswer3)
+        Me.Controls.Add(Me.btnAnswer1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "Game"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnAnswer1 As Button
+    Friend WithEvents btnAnswer3 As Button
+    Friend WithEvents btnAnswer2 As Button
+    Friend WithEvents btnAnswer4 As Button
 End Class
