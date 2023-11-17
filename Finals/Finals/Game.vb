@@ -5,23 +5,38 @@ Public Class Game
     Private questions As List(Of Question) = New List(Of Question)()
     Private answerButtons As List(Of Button)
 
-
     Private Sub InitializeQuestions()
-        questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1, 1000))
-        questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "Machine Code"}, 2, 1000))
-        questions.Add(New Question("In programming, what is the purpose of a 'variable'?", {"It is used to create loops.", "It represents a value that can change", "It is a type of comment.", "It is used for printing text."}, 1, 1000))
-        questions.Add(New Question("Which programming paradigm focuses on defining data structures and the methods that operate on them?", {"Object-Oriented Programming", "Functional Programming", "Procedural Programming", "Imperative Programming"}, 0, 1000))
-        questions.Add(New Question("What is the primary function of a 'for loop' in programming?", {"To define classes", "To encapsulate data", "To iterate a specific number of times", "To perform calculations"}, 2, 1000))
-        questions.Add(New Question("What does 'API' stand for in programming?", {"Automated Programming Interface", "Application Programming Interface", "Advanced Programming Instruction", "Automated Program Integration"}, 1, 1000))
-        questions.Add(New Question("In programming, what is 'debugging'?", {"Adding new features to a program", "The process of identifying and fixing errors in code", "Documenting code", "Optimizing code for speed"}, 1, 1000))
-        questions.Add(New Question("Which programming language is often used for web development on the client side?", {"C++", "Python", "JavaScript", "SQL"}, 2, 1000))
-        questions.Add(New Question("What does 'OOP' stand for in programming?", {"Object-Oriented Programming", "Object-Oriented Protocol", "Open-Source Project", "Object-Oriented Procedure"}, 0, 1000))
-        questions.Add(New Question("What is a 'Boolean' in programming?", {"A data type that represents true or false values", "A type of loop", "A specific error message", "A way to hide code from others"}, 0, 1000))
-        questions.Add(New Question("What is the purpose of a 'while loop' in programming?", {"To define classes", "To encapsulate data", "To perform a specific action repeatedly while a condition is true", "To display messages to the user"}, 2, 1000))
-        questions.Add(New Question("What is 'algorithm' in programming?", {"A mathematical equation", "A step-by-step procedure for solving a specific problem or performing a task", "A type of programming language", "A programming error message"}, 1, 1000))
-        questions.Add(New Question("What is the purpose of 'conditional statements' in programming?", {"They are used for adding comments to code", "They allow you to make decisions in your code based on certain conditions", "They represent different data types", "They help with code formatting"}, 1, 1000))
-        questions.Add(New Question("What is the purpose of 'comments' in programming code?", {"To execute code", "To prevent code from running", "To provide explanations or notes within the code for documentation and readability", "To create user interfaces"}, 2, 1000))
-        questions.Add(New Question("In programming, what is a 'stack' and a 'queue'?", {"Data types", "Data structures used for storing and accessing elements in a specific order", "Functions for drawing graphics", "Networking protocols"}, 1, 1000))
+        questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1))
+        questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "Machine Code"}, 2))
+        questions.Add(New Question("In programming, what is the purpose of a 'variable'?", {"It is used to create loops.", "It represents a value that can change", "It is a type of comment.", "It is used for printing text."}, 1))
+        questions.Add(New Question("Which programming paradigm focuses on defining data structures and the methods that operate on them?", {"Object-Oriented Programming", "Functional Programming", "Procedural Programming", "Imperative Programming"}, 0))
+        questions.Add(New Question("What is the primary function of a 'for loop' in programming?", {"To define classes", "To encapsulate data", "To iterate a specific number of times", "To perform calculations"}, 2))
+        questions.Add(New Question("What does 'API' stand for in programming?", {"Automated Programming Interface", "Application Programming Interface", "Advanced Programming Instruction", "Automated Program Integration"}, 1))
+        questions.Add(New Question("In programming, what is 'debugging'?", {"Adding new features to a program", "The process of identifying and fixing errors in code", "Documenting code", "Optimizing code for speed"}, 1))
+        questions.Add(New Question("Which programming language is often used for web development on the client side?", {"C++", "Python", "JavaScript", "SQL"}, 2))
+        questions.Add(New Question("What does 'OOP' stand for in programming?", {"Object-Oriented Programming", "Object-Oriented Protocol", "Open-Source Project", "Object-Oriented Procedure"}, 0))
+        questions.Add(New Question("What is a 'Boolean' in programming?", {"A data type that represents true or false values", "A type of loop", "A specific error message", "A way to hide code from others"}, 0))
+        questions.Add(New Question("What is the purpose of a 'while loop' in programming?", {"To define classes", "To encapsulate data", "To perform a specific action repeatedly while a condition is true", "To display messages to the user"}, 2))
+        questions.Add(New Question("What is 'algorithm' in programming?", {"A mathematical equation", "A step-by-step procedure for solving a specific problem or performing a task", "A type of programming language", "A programming error message"}, 1))
+        questions.Add(New Question("What is the purpose of 'conditional statements' in programming?", {"They are used for adding comments to code", "They allow you to make decisions in your code based on certain conditions", "They represent different data types", "They help with code formatting"}, 1))
+        questions.Add(New Question("What is the purpose of 'comments' in programming code?", {"To execute code", "To prevent code from running", "To provide explanations or notes within the code for documentation and readability", "To create user interfaces"}, 2))
+        questions.Add(New Question("In programming, what is a 'stack' and a 'queue'?", {"Data types", "Data structures used for storing and accessing elements in a specific order", "Functions for drawing graphics", "Networking protocols"}, 1))
+        questions.Add(New Question("Who is considered the world's first computer programmer?", {"Charles Babbage", "Alan Turing", "Ada Lovelace", "Grace Hopper"}, 2))
+        questions.Add(New Question("What machine was Ada Lovelace working on with Charles Babbage when she wrote the first computer program?", {"ENIAC", "UNIVAC", "Analytical Engine", "Difference Engine"}, 2))
+        questions.Add(New Question("In which year did Ada Lovelace write her notes and programs for the Analytical Engine?", {"1812", "1837", "1843", "1865"}, 2))
+        questions.Add(New Question("Who designed the first mechanical computer, known as the Analytical Engine?", {"Alan Turing", "John von Neumann", "Charles Babbage", "Ada Lovelace"}, 2))
+        questions.Add(New Question("When was the first functioning model of the Analytical Engine built?", {"It was never built during Babbage's lifetime", "1940s", "1960s", "2002"}, 0))
+        questions.Add(New Question("Who was Charles Babbage?", {"A famous painter", "A renowned mathematician and inventor", "A famous actor", "A medieval historian"}, 1))
+        questions.Add(New Question("Which of the following is considered a high-level programming language?", {"Assembly", "C", "Python", "Machine code"}, 3))
+        questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "All of the above"}, 3))
+        questions.Add(New Question("What is a data structure?", {"A way to structure code in a program", "A way to structure data for storage and efficient access", "A type of programming language", "A data visualization tool"}, 1))
+        questions.Add(New Question("Which of the following is not a commonly used data structure in programming?", {"Arrays", "Trees", "Algorithms", "Stacks"}, 2))
+        questions.Add(New Question("Who developed Visual Basic?", {"Microsoft", "IBM", "Apple", "Oracle"}, 0))
+        questions.Add(New Question("What is Visual Basic?", {"A web browser", "A visual design tool for creating user interfaces", "A programming language and integrated development environment (IDE)", "A type of computer monitor"}, 2))
+        questions.Add(New Question("Who developed JavaScript?", {"Microsoft", "Sun Microsystems", "Netscape", "IBM"}, 2))
+        questions.Add(New Question("What is JavaScript?", {"A type of coffee", "A markup language", "A high-level, interpreted programming language for web development", "A document format"}, 2))
+        questions.Add(New Question("Who originally developed Java?", {"Apple", "IBM", "Microsoft", "Sun Microsystems"}, 3))
+        questions.Add(New Question("What does 'JRE' stand for in Java?", {"Java Runtime Engine", "Java Runtime Environment", "Java Running Emulator", "Java Resource Editor"}, 1))
     End Sub
 
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -35,9 +50,11 @@ Public Class Game
         Dim rand As New Random()
         questions = questions.OrderBy(Function() rand.Next()).ToList()
     End Sub
+
     Private Sub InitializeAnswerButtons()
         answerButtons = New List(Of Button) From {btnAnswer1, btnAnswer2, btnAnswer3, btnAnswer4}
     End Sub
+
     Private Sub DisplayQuestion()
         If currentQuestionIndex < questions.Count Then
             Dim currentQuestion As Question = questions(currentQuestionIndex)
@@ -56,18 +73,15 @@ Public Class Game
         End If
     End Sub
 
-    Private totalWinnings As Integer = 0
-
     Private Sub CheckAnswer(selectedIndex As Integer)
         Dim currentQuestion As Question = questions(currentQuestionIndex)
 
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
-            MessageBox.Show("Correct! You've won $" & currentQuestion.Winnings & ".")
-            totalWinnings += currentQuestion.Winnings
+            MessageBox.Show("Correct!")
         Else
             MessageBox.Show("Incorrect! Game Over.")
-            Me.Close()
             GameOver.Show()
+            Me.Close()
         End If
 
         currentQuestionIndex += 1
@@ -95,12 +109,10 @@ Public Class Question
     Public Property Text As String
     Public Property Answers As String()
     Public Property CorrectAnswerIndex As Integer
-    Public Property Winnings As Integer
 
-    Public Sub New(questionText As String, answerOptions As String(), correctIndex As Integer, winnings As Integer)
+    Public Sub New(questionText As String, answerOptions As String(), correctIndex As Integer)
         Text = questionText
         Answers = answerOptions
         CorrectAnswerIndex = correctIndex
-        Me.Winnings = winnings
     End Sub
 End Class
