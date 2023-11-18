@@ -4,6 +4,7 @@ Public Class Game
     Private currentQuestionIndex As Integer = 0
     Private questions As List(Of Question) = New List(Of Question)()
     Private answerButtons As List(Of Button)
+    Private rand As New Random()
 
     Private Sub InitializeQuestions()
         questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1))
@@ -27,8 +28,7 @@ Public Class Game
         questions.Add(New Question("Who designed the first mechanical computer, known as the Analytical Engine?", {"Alan Turing", "John von Neumann", "Charles Babbage", "Ada Lovelace"}, 2))
         questions.Add(New Question("When was the first functioning model of the Analytical Engine built?", {"It was never built during Babbage's lifetime", "1940s", "1960s", "2002"}, 0))
         questions.Add(New Question("Who was Charles Babbage?", {"A famous painter", "A renowned mathematician and inventor", "A famous actor", "A medieval historian"}, 1))
-        questions.Add(New Question("Which of the following is considered a high-level programming language?", {"Assembly", "C", "Python", "Machine code"}, 3))
-        questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "All of the above"}, 3))
+        questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "All of the above"}, 2))
         questions.Add(New Question("What is a data structure?", {"A way to structure code in a program", "A way to structure data for storage and efficient access", "A type of programming language", "A data visualization tool"}, 1))
         questions.Add(New Question("Which of the following is not a commonly used data structure in programming?", {"Arrays", "Trees", "Algorithms", "Stacks"}, 2))
         questions.Add(New Question("Who developed Visual Basic?", {"Microsoft", "IBM", "Apple", "Oracle"}, 0))
@@ -47,8 +47,8 @@ Public Class Game
     End Sub
 
     Private Sub ShuffleQuestions()
-        Dim rand As New Random()
-        questions = questions.OrderBy(Function() rand.Next()).ToList()
+        Dim shuffledQuestions As List(Of Question) = questions.OrderBy(Function() rand.Next()).ToList()
+        questions = shuffledQuestions
     End Sub
 
     Private Sub InitializeAnswerButtons()
@@ -73,11 +73,19 @@ Public Class Game
         End If
     End Sub
 
+    Private Const CorrectAnswersToWin As Integer = 26
+
     Private Sub CheckAnswer(selectedIndex As Integer)
         Dim currentQuestion As Question = questions(currentQuestionIndex)
 
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
             MessageBox.Show("Correct!")
+
+            If CheckWinCondition() Then
+                MessageBox.Show("Congratulations! You've answered " & CorrectAnswersToWin & " questions in a row correctly.")
+                GameOver.Show()
+                Me.Close()
+            End If
         Else
             MessageBox.Show("Incorrect! Game Over.")
             GameOver.Show()
@@ -87,6 +95,23 @@ Public Class Game
         currentQuestionIndex += 1
         DisplayQuestion()
     End Sub
+
+    Private Function CheckWinCondition() As Boolean
+        Dim correctAnswersCount As Integer = 0
+
+        For i As Integer = 0 To currentQuestionIndex
+            If questions(i).CorrectAnswerIndex = 0 Then
+                correctAnswersCount += 1
+            Else
+                correctAnswersCount = 0
+            End If
+            If correctAnswersCount = CorrectAnswersToWin Then
+                Return True
+            End If
+        Next
+
+        Return False
+    End Function
 
     Private Sub btnAnswer1_Click(sender As Object, e As EventArgs) Handles btnAnswer1.Click
         CheckAnswer(0)
