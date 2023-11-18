@@ -81,8 +81,14 @@ Public Class Game
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
             MessageBox.Show("Correct!")
 
+            If currentQuestionIndex < ListBox1.Items.Count Then
+                ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+                MessageBox.Show($"Congratulations! Your grade is now {grade}.")
+            End If
+
             If CheckWinCondition() Then
-                MessageBox.Show("Congratulations! You've answered " & CorrectAnswersToWin & " questions in a row correctly.")
+                MessageBox.Show("Congratulations! You've answered all the questions in a row correctly.")
                 GameOver.Show()
                 Me.Close()
             End If
@@ -128,6 +134,7 @@ Public Class Game
     Private Sub btnAnswer4_Click(sender As Object, e As EventArgs) Handles btnAnswer4.Click
         CheckAnswer(3)
     End Sub
+
 End Class
 
 Public Class Question

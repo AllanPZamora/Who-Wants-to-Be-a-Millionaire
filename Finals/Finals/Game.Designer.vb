@@ -22,21 +22,13 @@ Partial Class Game
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnAnswer1 = New System.Windows.Forms.Button()
         Me.btnAnswer3 = New System.Windows.Forms.Button()
         Me.btnAnswer2 = New System.Windows.Forms.Button()
         Me.btnAnswer4 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(64, 246)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(720, 84)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnAnswer1
         '
@@ -74,16 +66,35 @@ Partial Class Game
         Me.btnAnswer4.TabIndex = 4
         Me.btnAnswer4.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.AutoSize = True
+        Me.TextBox1.Location = New System.Drawing.Point(312, 283)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(39, 13)
+        Me.TextBox1.TabIndex = 5
+        Me.TextBox1.Text = "Label1"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Items.AddRange(New Object() {"100", "99", "97", "96", "95", "94", "93", "92", "91", "90", "89", "88", "87", "86", "85", "84", "83", "82", "81", "80", "79", "78", "77", "76", "75"})
+        Me.ListBox1.Location = New System.Drawing.Point(834, 166)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 329)
+        Me.ListBox1.TabIndex = 6
+        '
         'Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1071, 600)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnAnswer4)
         Me.Controls.Add(Me.btnAnswer2)
         Me.Controls.Add(Me.btnAnswer3)
         Me.Controls.Add(Me.btnAnswer1)
-        Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Game"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -91,10 +102,10 @@ Partial Class Game
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnAnswer1 As Button
     Friend WithEvents btnAnswer3 As Button
     Friend WithEvents btnAnswer2 As Button
     Friend WithEvents btnAnswer4 As Button
+    Friend WithEvents TextBox1 As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class
