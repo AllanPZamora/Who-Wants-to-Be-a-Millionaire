@@ -12,3 +12,4 @@ C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Fin
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.Main.resources
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.Game.resources
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.GameOver.resources
+C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.LoadingMain.resources

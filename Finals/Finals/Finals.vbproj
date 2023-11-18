@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoadingMain.Designer.vb">
+      <DependentUpon>LoadingMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GameOver.Designer.vb">
       <DependentUpon>GameOver.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GameOver.resx">
       <DependentUpon>GameOver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingMain.resx">
+      <DependentUpon>LoadingMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>

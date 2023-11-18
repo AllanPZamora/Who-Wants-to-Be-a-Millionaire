@@ -68,12 +68,12 @@ Partial Class Game
         '
         'TextBox1
         '
-        Me.TextBox1.AutoSize = True
-        Me.TextBox1.Location = New System.Drawing.Point(312, 283)
+        Me.TextBox1.Location = New System.Drawing.Point(117, 254)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(39, 13)
+        Me.TextBox1.Size = New System.Drawing.Size(597, 94)
         Me.TextBox1.TabIndex = 5
         Me.TextBox1.Text = "Label1"
+        Me.TextBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ListBox1
         '
@@ -99,7 +99,6 @@ Partial Class Game
         Me.Name = "Game"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnAnswer1 As Button

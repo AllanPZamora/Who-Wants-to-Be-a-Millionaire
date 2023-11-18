@@ -67,19 +67,18 @@ Public Class Game
                     End If
                 Next
             End If
-        Else
-            MessageBox.Show("Congratulations! You've answered all questions.")
-            Me.Close()
         End If
     End Sub
 
-    Private Const CorrectAnswersToWin As Integer = 26
+    Private Sub CloseGame()
+        Me.Close()
+    End Sub
 
+    Private Const CorrectAnswersToWin As Integer = 25
     Private Sub CheckAnswer(selectedIndex As Integer)
         Dim currentQuestion As Question = questions(currentQuestionIndex)
 
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
-            MessageBox.Show("Correct!")
 
             If currentQuestionIndex < ListBox1.Items.Count Then
                 ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
@@ -87,15 +86,26 @@ Public Class Game
                 MessageBox.Show($"Congratulations! Your grade is now {grade}.")
             End If
 
+            If currentQuestionIndex = 24 Then
+                MessageBox.Show("Congratulations! You've Reached 100. You've completed the game!")
+                CloseGame()
+            End If
+
             If CheckWinCondition() Then
-                MessageBox.Show("Congratulations! You've answered all the questions in a row correctly.")
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+                MessageBox.Show($"Congratulations! Your grade is now {grade}.")
+                GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 GameOver.Show()
-                Me.Close()
+                CloseGame()
             End If
         Else
-            MessageBox.Show("Incorrect! Game Over.")
-            GameOver.Show()
-            Me.Close()
+            If currentQuestionIndex < ListBox1.Items.Count Then
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+                MessageBox.Show($"Incorrect! Game Over. Your final grade is {grade}.")
+                GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
+                GameOver.Show()
+                CloseGame()
+            End If
         End If
 
         currentQuestionIndex += 1
@@ -106,11 +116,12 @@ Public Class Game
         Dim correctAnswersCount As Integer = 0
 
         For i As Integer = 0 To currentQuestionIndex
-            If questions(i).CorrectAnswerIndex = 0 Then
+            If questions(i).CorrectAnswerIndex = i Then
                 correctAnswersCount += 1
             Else
                 correctAnswersCount = 0
             End If
+
             If correctAnswersCount = CorrectAnswersToWin Then
                 Return True
             End If
