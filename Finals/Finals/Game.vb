@@ -56,6 +56,10 @@ Public Class Game
     End Sub
 
     Private Sub DisplayQuestion()
+        For Each button As Button In answerButtons
+            button.Enabled = True
+        Next
+
         If currentQuestionIndex < questions.Count Then
             Dim currentQuestion As Question = questions(currentQuestionIndex)
             TextBox1.Text = currentQuestion.Text
@@ -77,21 +81,24 @@ Public Class Game
     Private Const CorrectAnswersToWin As Integer = 25
     Private Sub CheckAnswer(selectedIndex As Integer)
         Dim currentQuestion As Question = questions(currentQuestionIndex)
-        Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
 
             If currentQuestionIndex < ListBox1.Items.Count Then
                 ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Congratulations! Your grade is now {grade}.")
             End If
 
             If currentQuestionIndex = 24 Then
-                MessageBox.Show("Congratulations! You've Reached 100. You've completed the game!")
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+                MessageBox.Show($"Congratulations! Your grade is now {grade}.")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 CloseGame()
             End If
 
             If CheckWinCondition() Then
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Congratulations! Your grade is now {grade}.")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 GameOver.Show()
@@ -99,6 +106,7 @@ Public Class Game
             End If
         Else
             If currentQuestionIndex < ListBox1.Items.Count Then
+                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Incorrect! Game Over. Your final grade is {grade}.")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 GameOver.Show()
@@ -127,6 +135,29 @@ Public Class Game
 
         Return False
     End Function
+    Private Sub DisableTwoIncorrectAnswers()
+        Dim currentQuestion As Question = questions(currentQuestionIndex)
+        Dim correctAnswerIndex As Integer = currentQuestion.CorrectAnswerIndex
+
+        Dim incorrectAnswerIndices As New List(Of Integer)
+
+        For i As Integer = 0 To answerButtons.Count - 1
+            If i <> correctAnswerIndex Then
+                incorrectAnswerIndices.Add(i)
+            End If
+        Next
+
+        Dim incorrectAnswerIndex1 As Integer = incorrectAnswerIndices(rand.Next(incorrectAnswerIndices.Count))
+
+        incorrectAnswerIndices.Remove(incorrectAnswerIndex1)
+
+        Dim incorrectAnswerIndex2 As Integer = incorrectAnswerIndices(rand.Next(incorrectAnswerIndices.Count))
+
+        answerButtons(incorrectAnswerIndex1).Enabled = False
+        answerButtons(incorrectAnswerIndex2).Enabled = False
+
+        MessageBox.Show("You have used the 50/50 lifeline. Two incorrect answers for the current question have been disabled.")
+    End Sub
 
     Private Sub btnAnswer1_Click(sender As Object, e As EventArgs) Handles btnAnswer1.Click
         CheckAnswer(0)
@@ -145,7 +176,8 @@ Public Class Game
     End Sub
 
     Private Sub Btn5050_Click(sender As Object, e As EventArgs) Handles Btn5050.Click
-
+        DisableTwoIncorrectAnswers()
+        Btn5050.Enabled = False
     End Sub
 
     Private Sub BtnIns_Click(sender As Object, e As EventArgs) Handles BtnIns.Click
