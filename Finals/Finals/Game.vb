@@ -77,22 +77,21 @@ Public Class Game
     Private Const CorrectAnswersToWin As Integer = 25
     Private Sub CheckAnswer(selectedIndex As Integer)
         Dim currentQuestion As Question = questions(currentQuestionIndex)
-
+        Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
         If currentQuestion.CorrectAnswerIndex = selectedIndex Then
 
             If currentQuestionIndex < ListBox1.Items.Count Then
                 ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
-                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Congratulations! Your grade is now {grade}.")
             End If
 
             If currentQuestionIndex = 24 Then
                 MessageBox.Show("Congratulations! You've Reached 100. You've completed the game!")
+                GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 CloseGame()
             End If
 
             If CheckWinCondition() Then
-                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Congratulations! Your grade is now {grade}.")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 GameOver.Show()
@@ -100,7 +99,6 @@ Public Class Game
             End If
         Else
             If currentQuestionIndex < ListBox1.Items.Count Then
-                Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
                 MessageBox.Show($"Incorrect! Game Over. Your final grade is {grade}.")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
                 GameOver.Show()
@@ -146,6 +144,17 @@ Public Class Game
         CheckAnswer(3)
     End Sub
 
+    Private Sub Btn5050_Click(sender As Object, e As EventArgs) Handles Btn5050.Click
+
+    End Sub
+
+    Private Sub BtnIns_Click(sender As Object, e As EventArgs) Handles BtnIns.Click
+
+    End Sub
+
+    Private Sub BtnSkip_Click(sender As Object, e As EventArgs) Handles BtnSkip.Click
+
+    End Sub
 End Class
 
 Public Class Question
