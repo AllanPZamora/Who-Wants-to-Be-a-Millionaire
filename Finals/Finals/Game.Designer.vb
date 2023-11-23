@@ -82,7 +82,7 @@ Partial Class Game
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Items.AddRange(New Object() {"100", "99", "97", "96", "95", "94", "93", "92", "91", "90", "89", "88", "87", "86", "85", "84", "83", "82", "81", "80", "79", "78", "77", "76", "75"})
-        Me.ListBox1.Location = New System.Drawing.Point(834, 166)
+        Me.ListBox1.Location = New System.Drawing.Point(807, 165)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(120, 329)
         Me.ListBox1.TabIndex = 6

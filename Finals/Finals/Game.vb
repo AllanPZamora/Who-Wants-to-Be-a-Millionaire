@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Forms
+﻿Imports System.Runtime.CompilerServices
+Imports System.Windows.Forms
 
 Public Class Game
     Private currentQuestionIndex As Integer = 0
@@ -92,8 +93,9 @@ Public Class Game
 
             If currentQuestionIndex = 24 Then
                 Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
-                MessageBox.Show($"Congratulations! Your grade is now {grade}.")
+                MessageBox.Show("Congratulations! You answered all the questions you win!")
                 GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
+                GameOver.Show()
                 CloseGame()
             End If
 
@@ -113,7 +115,6 @@ Public Class Game
                 CloseGame()
             End If
         End If
-
         currentQuestionIndex += 1
         DisplayQuestion()
     End Sub
@@ -181,12 +182,45 @@ Public Class Game
     End Sub
 
     Private Sub BtnIns_Click(sender As Object, e As EventArgs) Handles BtnIns.Click
-
+        MessageBox.Show("You have used the Ask the instructor lifeline.")
+        BtnIns.Enabled = False
     End Sub
+
 
     Private Sub BtnSkip_Click(sender As Object, e As EventArgs) Handles BtnSkip.Click
 
+        If currentQuestionIndex < ListBox1.Items.Count Then
+            ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
+            Dim currentGrade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+
+
+            If ListBox1.SelectedIndex = 0 Then
+                currentGrade += 1
+                ListBox1.Items(ListBox1.SelectedIndex) = currentGrade
+            End If
+
+            MessageBox.Show($"You have used the Skip lifeline. The current question will be skipped. Your grade is now {currentGrade}.")
+        End If
+
+        SkipQuestion()
+        BtnSkip.Enabled = False
     End Sub
+
+    Private Sub SkipQuestion()
+        currentQuestionIndex += 1
+
+        If currentQuestionIndex >= questions.Count Then
+            MessageBox.Show("Congratulations! You've completed the game!")
+            Dim grade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
+            GameOver.Label1.Text = $"Congratulations! Your grade is {grade}."
+            GameOver.Show()
+            CloseGame()
+        Else
+            ShuffleQuestions()
+            DisplayQuestion()
+        End If
+    End Sub
+
 End Class
 
 Public Class Question

@@ -44,6 +44,7 @@ Partial Class LoadingMain
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Name = "LoadingMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
