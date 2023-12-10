@@ -13,3 +13,43 @@ C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Fin
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.Game.resources
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.GameOver.resources
 C:\Users\ALLAN\Desktop\Who Wants to Be a Millionaire\Finals\Finals\obj\Debug\Finals.LoadingMain.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.exe.config
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.exe
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.pdb
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.xml
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.AssemblyReference.cache
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Game.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.GameOver.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.LoadingMain.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Main.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Resources.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.GenerateResource.cache
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.CoreCompileInputs.cache
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.exe
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.xml
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.pdb
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Guna.UI2.dll
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Sample.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.CopyComplete
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Category.resources
+C:\Users\Maxxie\Desktop\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Menu.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.exe.config
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.exe
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.pdb
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Finals.xml
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\bin\Debug\Guna.UI2.dll
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.AssemblyReference.cache
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Category.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Game.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.GameOver.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.LoadingMain.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Main.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Menu.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Resources.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.Sample.resources
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.GenerateResource.cache
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.CoreCompileInputs.cache
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.vbproj.CopyComplete
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.exe
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.xml
+D:\Downloads\Who-Wants-to-Be-a-Millionaire\Finals\Finals\obj\Debug\Finals.pdb
