@@ -353,11 +353,6 @@ Public Class Game
 
         End Select
 
-
-
-
-
-
         'If My.Settings.categoryStr = "IT" Then
         '    questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1))
         '    questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "Machine Code"}, 2))
@@ -487,9 +482,6 @@ Public Class Game
         If currentQuestionIndex < questions.Count Then
             Dim currentQuestion As Question = questions(currentQuestionIndex)
             TextBox1.Text = currentQuestion.Text
-
-            'uncomment mamaya
-            'MsgBox(currentQuestion.CorrectAnswerIndex.ToString)
 
             If answerButtons IsNot Nothing Then
                 For i As Integer = 0 To currentQuestion.Answers.Length - 1
