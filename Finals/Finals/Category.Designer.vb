@@ -38,7 +38,7 @@ Partial Class Category
         '
         Me.Guna2Button1.AutoRoundedCorners = True
         Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.BorderRadius = 29
+        Me.Guna2Button1.BorderRadius = 23
         Me.Guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button1.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -50,9 +50,10 @@ Partial Class Category
         Me.Guna2Button1.FillColor = System.Drawing.Color.White
         Me.Guna2Button1.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button1.Location = New System.Drawing.Point(36, 126)
+        Me.Guna2Button1.Location = New System.Drawing.Point(27, 102)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button1.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button1.TabIndex = 9
         Me.Guna2Button1.Text = "Engineering"
         '
@@ -60,7 +61,7 @@ Partial Class Category
         '
         Me.Guna2Button2.AutoRoundedCorners = True
         Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.BorderRadius = 29
+        Me.Guna2Button2.BorderRadius = 23
         Me.Guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button2.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -72,9 +73,10 @@ Partial Class Category
         Me.Guna2Button2.FillColor = System.Drawing.Color.White
         Me.Guna2Button2.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button2.Location = New System.Drawing.Point(253, 213)
+        Me.Guna2Button2.Location = New System.Drawing.Point(190, 173)
+        Me.Guna2Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button2.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button2.TabIndex = 9
         Me.Guna2Button2.Text = "Political Science"
         '
@@ -82,7 +84,7 @@ Partial Class Category
         '
         Me.Guna2Button3.AutoRoundedCorners = True
         Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.BorderRadius = 29
+        Me.Guna2Button3.BorderRadius = 23
         Me.Guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button3.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button3.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -94,9 +96,10 @@ Partial Class Category
         Me.Guna2Button3.FillColor = System.Drawing.Color.White
         Me.Guna2Button3.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button3.Location = New System.Drawing.Point(472, 41)
+        Me.Guna2Button3.Location = New System.Drawing.Point(354, 33)
+        Me.Guna2Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button3.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button3.TabIndex = 10
         Me.Guna2Button3.Text = "Education"
         '
@@ -104,7 +107,7 @@ Partial Class Category
         '
         Me.Guna2Button4.AutoRoundedCorners = True
         Me.Guna2Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.BorderRadius = 29
+        Me.Guna2Button4.BorderRadius = 23
         Me.Guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button4.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button4.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -116,9 +119,10 @@ Partial Class Category
         Me.Guna2Button4.FillColor = System.Drawing.Color.White
         Me.Guna2Button4.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button4.Location = New System.Drawing.Point(36, 41)
+        Me.Guna2Button4.Location = New System.Drawing.Point(27, 33)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button4.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button4.TabIndex = 11
         Me.Guna2Button4.Text = "Accountancy"
         '
@@ -126,7 +130,7 @@ Partial Class Category
         '
         Me.Guna2Button5.AutoRoundedCorners = True
         Me.Guna2Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button5.BorderRadius = 29
+        Me.Guna2Button5.BorderRadius = 23
         Me.Guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button5.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button5.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -138,9 +142,10 @@ Partial Class Category
         Me.Guna2Button5.FillColor = System.Drawing.Color.White
         Me.Guna2Button5.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button5.Location = New System.Drawing.Point(36, 213)
+        Me.Guna2Button5.Location = New System.Drawing.Point(27, 173)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button5.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button5.TabIndex = 12
         Me.Guna2Button5.Text = "Marketing"
         '
@@ -148,7 +153,7 @@ Partial Class Category
         '
         Me.Guna2Button6.AutoRoundedCorners = True
         Me.Guna2Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button6.BorderRadius = 29
+        Me.Guna2Button6.BorderRadius = 23
         Me.Guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button6.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button6.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -160,9 +165,10 @@ Partial Class Category
         Me.Guna2Button6.FillColor = System.Drawing.Color.White
         Me.Guna2Button6.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button6.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button6.Location = New System.Drawing.Point(253, 41)
+        Me.Guna2Button6.Location = New System.Drawing.Point(190, 33)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button6.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button6.TabIndex = 13
         Me.Guna2Button6.Text = "Criminology"
         '
@@ -170,7 +176,7 @@ Partial Class Category
         '
         Me.Guna2Button7.AutoRoundedCorners = True
         Me.Guna2Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button7.BorderRadius = 29
+        Me.Guna2Button7.BorderRadius = 23
         Me.Guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button7.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button7.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -182,9 +188,10 @@ Partial Class Category
         Me.Guna2Button7.FillColor = System.Drawing.Color.White
         Me.Guna2Button7.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button7.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button7.Location = New System.Drawing.Point(472, 213)
+        Me.Guna2Button7.Location = New System.Drawing.Point(354, 173)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button7.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button7.TabIndex = 14
         Me.Guna2Button7.Text = "Tourism"
         '
@@ -192,7 +199,7 @@ Partial Class Category
         '
         Me.Guna2Button8.AutoRoundedCorners = True
         Me.Guna2Button8.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button8.BorderRadius = 29
+        Me.Guna2Button8.BorderRadius = 23
         Me.Guna2Button8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button8.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button8.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -204,9 +211,10 @@ Partial Class Category
         Me.Guna2Button8.FillColor = System.Drawing.Color.White
         Me.Guna2Button8.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button8.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button8.Location = New System.Drawing.Point(472, 126)
+        Me.Guna2Button8.Location = New System.Drawing.Point(354, 102)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button8.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button8.TabIndex = 15
         Me.Guna2Button8.Text = "Information Technology"
         '
@@ -214,7 +222,7 @@ Partial Class Category
         '
         Me.Guna2Button9.AutoRoundedCorners = True
         Me.Guna2Button9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button9.BorderRadius = 29
+        Me.Guna2Button9.BorderRadius = 23
         Me.Guna2Button9.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2Button9.CheckedState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button9.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -226,9 +234,10 @@ Partial Class Category
         Me.Guna2Button9.FillColor = System.Drawing.Color.White
         Me.Guna2Button9.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button9.ForeColor = System.Drawing.Color.Black
-        Me.Guna2Button9.Location = New System.Drawing.Point(253, 126)
+        Me.Guna2Button9.Location = New System.Drawing.Point(190, 102)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button9.Name = "Guna2Button9"
-        Me.Guna2Button9.Size = New System.Drawing.Size(180, 60)
+        Me.Guna2Button9.Size = New System.Drawing.Size(135, 49)
         Me.Guna2Button9.TabIndex = 16
         Me.Guna2Button9.Text = "Hospitality Management"
         '
@@ -245,18 +254,19 @@ Partial Class Category
         Me.Guna2Button10.FillColor = System.Drawing.Color.Transparent
         Me.Guna2Button10.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.Guna2Button10.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button10.Location = New System.Drawing.Point(253, 327)
+        Me.Guna2Button10.Location = New System.Drawing.Point(190, 278)
+        Me.Guna2Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button10.Name = "Guna2Button10"
-        Me.Guna2Button10.Size = New System.Drawing.Size(180, 64)
+        Me.Guna2Button10.Size = New System.Drawing.Size(135, 52)
         Me.Guna2Button10.TabIndex = 17
         '
         'Category
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Finals.My.Resources.Resources.藍色簡約紋理背景圖桌布手機桌布圖片免費下載___Pngtree
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(720, 449)
+        Me.ClientSize = New System.Drawing.Size(540, 365)
         Me.Controls.Add(Me.Guna2Button10)
         Me.Controls.Add(Me.Guna2Button9)
         Me.Controls.Add(Me.Guna2Button8)
@@ -268,6 +278,7 @@ Partial Class Category
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.Guna2Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Category"

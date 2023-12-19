@@ -353,78 +353,6 @@ Public Class Game
 
         End Select
 
-        'If My.Settings.categoryStr = "IT" Then
-        '    questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1))
-        '    questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "Machine Code"}, 2))
-        '    questions.Add(New Question("In programming, what is the purpose of a 'variable'?", {"It is used to create loops.", "It represents a value that can change", "It is a type of comment.", "It is used for printing text."}, 1))
-        '    questions.Add(New Question("Which programming paradigm focuses on defining data structures and the methods that operate on them?", {"Object-Oriented Programming", "Functional Programming", "Procedural Programming", "Imperative Programming"}, 0))
-        '    questions.Add(New Question("What is the primary function of a 'for loop' in programming?", {"To define classes", "To encapsulate data", "To iterate a specific number of times", "To perform calculations"}, 2))
-        '    questions.Add(New Question("What does 'API' stand for in programming?", {"Automated Programming Interface", "Application Programming Interface", "Advanced Programming Instruction", "Automated Program Integration"}, 1))
-        '    questions.Add(New Question("In programming, what is 'debugging'?", {"Adding new features to a program", "The process of identifying and fixing errors in code", "Documenting code", "Optimizing code for speed"}, 1))
-        '    questions.Add(New Question("Which programming language is often used for web development on the client side?", {"C++", "Python", "JavaScript", "SQL"}, 2))
-        '    questions.Add(New Question("What does 'OOP' stand for in programming?", {"Object-Oriented Programming", "Object-Oriented Protocol", "Open-Source Project", "Object-Oriented Procedure"}, 0))
-        '    questions.Add(New Question("What is a 'Boolean' in programming?", {"A data type that represents true or false values", "A type of loop", "A specific error message", "A way to hide code from others"}, 0))
-        '    questions.Add(New Question("What is the purpose of a 'while loop' in programming?", {"To define classes", "To encapsulate data", "To perform a specific action repeatedly while a condition is true", "To display messages to the user"}, 2))
-        '    questions.Add(New Question("What is 'algorithm' in programming?", {"A mathematical equation", "A step-by-step procedure for solving a specific problem or performing a task", "A type of programming language", "A programming error message"}, 1))
-        '    questions.Add(New Question("What is the purpose of 'conditional statements' in programming?", {"They are used for adding comments to code", "They allow you to make decisions in your code based on certain conditions", "They represent different data types", "They help with code formatting"}, 1))
-        '    questions.Add(New Question("What is the purpose of 'comments' in programming code?", {"To execute code", "To prevent code from running", "To provide explanations or notes within the code for documentation and readability", "To create user interfaces"}, 2))
-        '    questions.Add(New Question("In programming, what is a 'stack' and a 'queue'?", {"Data types", "Data structures used for storing and accessing elements in a specific order", "Functions for drawing graphics", "Networking protocols"}, 1))
-        '    questions.Add(New Question("Who is considered the world's first computer programmer?", {"Charles Babbage", "Alan Turing", "Ada Lovelace", "Grace Hopper"}, 2))
-        '    questions.Add(New Question("What machine was Ada Lovelace working on with Charles Babbage when she wrote the first computer program?", {"ENIAC", "UNIVAC", "Analytical Engine", "Difference Engine"}, 2))
-        '    questions.Add(New Question("In which year did Ada Lovelace write her notes and programs for the Analytical Engine?", {"1812", "1837", "1843", "1865"}, 2))
-        '    questions.Add(New Question("Who designed the first mechanical computer, known as the Analytical Engine?", {"Alan Turing", "John von Neumann", "Charles Babbage", "Ada Lovelace"}, 2))
-        '    questions.Add(New Question("When was the first functioning model of the Analytical Engine built?", {"It was never built during Babbage's lifetime", "1940s", "1960s", "2002"}, 0))
-        '    questions.Add(New Question("Who was Charles Babbage?", {"A famous painter", "A renowned mathematician and inventor", "A famous actor", "A medieval historian"}, 1))
-        '    questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "All of the above"}, 2))
-        '    questions.Add(New Question("What is a data structure?", {"A way to structure code in a program", "A way to structure data for storage and efficient access", "A type of programming language", "A data visualization tool"}, 1))
-        '    questions.Add(New Question("Which of the following is not a commonly used data structure in programming?", {"Arrays", "Trees", "Algorithms", "Stacks"}, 2))
-        '    questions.Add(New Question("Who developed Visual Basic?", {"Microsoft", "IBM", "Apple", "Oracle"}, 0))
-        '    questions.Add(New Question("What is Visual Basic?", {"A web browser", "A visual design tool for creating user interfaces", "A programming language and integrated development environment (IDE)", "A type of computer monitor"}, 2))
-        '    questions.Add(New Question("Who developed JavaScript?", {"Microsoft", "Sun Microsystems", "Netscape", "IBM"}, 2))
-        '    questions.Add(New Question("What is JavaScript?", {"A type of coffee", "A markup language", "A high-level, interpreted programming language for web development", "A document format"}, 2))
-        '    questions.Add(New Question("Who originally developed Java?", {"Apple", "IBM", "Microsoft", "Sun Microsystems"}, 3))
-        '    questions.Add(New Question("What does 'JRE' stand for in Java?", {"Java Runtime Engine", "Java Runtime Environment", "Java Running Emulator", "Java Resource Editor"}, 1))
-
-        'ElseIf My.Settings.categoryStr = "Random" Then
-        '    MsgBox("RAndom")
-        'Else
-        '    MsgBox("Not It")
-        'End If
-
-
-
-
-        'questions.Add(New Question("What does 'IDE' stand for in programming?", {"Integrated Design Environment", "Integrated Development Environment", "Internet Development Engine", "Intelligent Debugging Environment"}, 1))
-        'questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "Machine Code"}, 2))
-        'questions.Add(New Question("In programming, what is the purpose of a 'variable'?", {"It is used to create loops.", "It represents a value that can change", "It is a type of comment.", "It is used for printing text."}, 1))
-        'questions.Add(New Question("Which programming paradigm focuses on defining data structures and the methods that operate on them?", {"Object-Oriented Programming", "Functional Programming", "Procedural Programming", "Imperative Programming"}, 0))
-        'questions.Add(New Question("What is the primary function of a 'for loop' in programming?", {"To define classes", "To encapsulate data", "To iterate a specific number of times", "To perform calculations"}, 2))
-        'questions.Add(New Question("What does 'API' stand for in programming?", {"Automated Programming Interface", "Application Programming Interface", "Advanced Programming Instruction", "Automated Program Integration"}, 1))
-        'questions.Add(New Question("In programming, what is 'debugging'?", {"Adding new features to a program", "The process of identifying and fixing errors in code", "Documenting code", "Optimizing code for speed"}, 1))
-        'questions.Add(New Question("Which programming language is often used for web development on the client side?", {"C++", "Python", "JavaScript", "SQL"}, 2))
-        'questions.Add(New Question("What does 'OOP' stand for in programming?", {"Object-Oriented Programming", "Object-Oriented Protocol", "Open-Source Project", "Object-Oriented Procedure"}, 0))
-        'questions.Add(New Question("What is a 'Boolean' in programming?", {"A data type that represents true or false values", "A type of loop", "A specific error message", "A way to hide code from others"}, 0))
-        'questions.Add(New Question("What is the purpose of a 'while loop' in programming?", {"To define classes", "To encapsulate data", "To perform a specific action repeatedly while a condition is true", "To display messages to the user"}, 2))
-        'questions.Add(New Question("What is 'algorithm' in programming?", {"A mathematical equation", "A step-by-step procedure for solving a specific problem or performing a task", "A type of programming language", "A programming error message"}, 1))
-        'questions.Add(New Question("What is the purpose of 'conditional statements' in programming?", {"They are used for adding comments to code", "They allow you to make decisions in your code based on certain conditions", "They represent different data types", "They help with code formatting"}, 1))
-        'questions.Add(New Question("What is the purpose of 'comments' in programming code?", {"To execute code", "To prevent code from running", "To provide explanations or notes within the code for documentation and readability", "To create user interfaces"}, 2))
-        'questions.Add(New Question("In programming, what is a 'stack' and a 'queue'?", {"Data types", "Data structures used for storing and accessing elements in a specific order", "Functions for drawing graphics", "Networking protocols"}, 1))
-        'questions.Add(New Question("Who is considered the world's first computer programmer?", {"Charles Babbage", "Alan Turing", "Ada Lovelace", "Grace Hopper"}, 2))
-        'questions.Add(New Question("What machine was Ada Lovelace working on with Charles Babbage when she wrote the first computer program?", {"ENIAC", "UNIVAC", "Analytical Engine", "Difference Engine"}, 2))
-        'questions.Add(New Question("In which year did Ada Lovelace write her notes and programs for the Analytical Engine?", {"1812", "1837", "1843", "1865"}, 2))
-        'questions.Add(New Question("Who designed the first mechanical computer, known as the Analytical Engine?", {"Alan Turing", "John von Neumann", "Charles Babbage", "Ada Lovelace"}, 2))
-        'questions.Add(New Question("When was the first functioning model of the Analytical Engine built?", {"It was never built during Babbage's lifetime", "1940s", "1960s", "2002"}, 0))
-        'questions.Add(New Question("Who was Charles Babbage?", {"A famous painter", "A renowned mathematician and inventor", "A famous actor", "A medieval historian"}, 1))
-        'questions.Add(New Question("Which of the following is a high-level programming language?", {"Binary", "Assembly", "C++", "All of the above"}, 2))
-        'questions.Add(New Question("What is a data structure?", {"A way to structure code in a program", "A way to structure data for storage and efficient access", "A type of programming language", "A data visualization tool"}, 1))
-        'questions.Add(New Question("Which of the following is not a commonly used data structure in programming?", {"Arrays", "Trees", "Algorithms", "Stacks"}, 2))
-        'questions.Add(New Question("Who developed Visual Basic?", {"Microsoft", "IBM", "Apple", "Oracle"}, 0))
-        'questions.Add(New Question("What is Visual Basic?", {"A web browser", "A visual design tool for creating user interfaces", "A programming language and integrated development environment (IDE)", "A type of computer monitor"}, 2))
-        'questions.Add(New Question("Who developed JavaScript?", {"Microsoft", "Sun Microsystems", "Netscape", "IBM"}, 2))
-        'questions.Add(New Question("What is JavaScript?", {"A type of coffee", "A markup language", "A high-level, interpreted programming language for web development", "A document format"}, 2))
-        'questions.Add(New Question("Who originally developed Java?", {"Apple", "IBM", "Microsoft", "Sun Microsystems"}, 3))
-        'questions.Add(New Question("What does 'JRE' stand for in Java?", {"Java Runtime Engine", "Java Runtime Environment", "Java Running Emulator", "Java Resource Editor"}, 1))
-
     End Sub
 
     Private Sub Game_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -432,38 +360,9 @@ Public Class Game
         ShuffleQuestions()
         InitializeAnswerButtons()
         DisplayQuestion()
-
-        'AddPanelNumbers()
         ListBox1.Enabled = False
 
     End Sub
-
-    'Dim numLabels(25) As Label
-    'Sub AddPanelNumbers()
-
-    '    Dim num As Integer = 100
-    '    Dim y As Integer = 10
-    '    For i As Integer = 0 To 25
-
-    '        numLabels(i) = New Label With {
-    '            .Text = num,
-    '            .Location = New Point(10, y),
-    '            .BackColor = Color.Transparent,
-    '            .TextAlign = HorizontalAlignment.Center
-    '        }
-
-    '        If i Mod 5 = 0 Then
-    '            numLabels(i).ForeColor = ColorTranslator.FromHtml("#FFC436")
-    '        End If
-
-    '        Panel1.Controls.Add(numLabels(i))
-    ''        y += 22
-    ''        num -= 1
-
-    '    Next
-    'End Sub
-
-
 
     Private Sub ShuffleQuestions()
         Dim shuffledQuestions As List(Of Question) = questions.OrderBy(Function() rand.Next()).ToList()
@@ -609,50 +508,16 @@ Public Class Game
 
     Private Sub pbSkip_Click(sender As Object, e As EventArgs) Handles pbSkip.Click
 
-
-        'Console.WriteLine(questions(3).Text)
-
-
-        'If currentQuestionIndex < ListBox1.Items.Count Then
-        '    ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
-        '    Dim currentGrade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
-
-
-        '    If ListBox1.SelectedIndex = 0 Then
-        '        currentGrade += 1
-        '        ListBox1.Items(ListBox1.SelectedIndex) = currentGrade
-        '    End If
-
         MessageBox.Show("You have used the Skip lifeline. The current question will be skipped.")
-        'End If
 
         SkipQuestion()
+
         pbSkip.Enabled = False
         pbSkip.Image = My.Resources.xswitch
 
-
-
-
-        'If currentQuestionIndex < ListBox1.Items.Count Then
-        '    ListBox1.SelectedIndex = ListBox1.Items.Count - currentQuestionIndex - 1
-        '    Dim currentGrade As Integer = Convert.ToInt32(ListBox1.SelectedItem)
-
-
-        '    If ListBox1.SelectedIndex = 0 Then
-        '        currentGrade += 1
-        '        ListBox1.Items(ListBox1.SelectedIndex) = currentGrade
-        '    End If
-
-        '    MessageBox.Show($"You have used the Skip lifeline. The current question will be skipped. Your grade is now {currentGrade}.")
-        'End If
-
-        'SkipQuestion()
-        'pbSkip.Enabled = False
-        'pbSkip.Image = My.Resources.xswitch
     End Sub
 
     Private Sub SkipQuestion()
-        'currentQuestionIndex += 1
 
         If currentQuestionIndex >= questions.Count Then
             MessageBox.Show("Congratulations! You've completed the game!")

@@ -34,11 +34,12 @@ Partial Class LoadingMain
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(217, 497)
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 436)
+        Me.ProgressBar1.Margin = New System.Windows.Forms.Padding(2)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(196, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ProgressBar1.Size = New System.Drawing.Size(611, 28)
+        Me.ProgressBar1.Size = New System.Drawing.Size(800, 23)
         Me.ProgressBar1.TabIndex = 2
         Me.ProgressBar1.Text = "Guna2ProgressBar1"
         Me.ProgressBar1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
@@ -48,21 +49,21 @@ Partial Class LoadingMain
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.Finals.My.Resources.Resources.loading_form
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1067, 554)
+        Me.PictureBox1.Size = New System.Drawing.Size(800, 450)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'LoadingMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoadingMain"
@@ -74,6 +75,6 @@ Partial Class LoadingMain
     End Sub
 
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ProgressBar1 As Guna.UI2.WinForms.Guna2ProgressBar
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -1,16 +1,4 @@
 ﻿Public Class Category
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-        '    My.Settings.categoryStr = "IT"
-        '    My.Settings.Save()
-        '    Game.Show()
-
-        SetCategory("IT")
-
-    End Sub
-
-    'Private Sub Button1_Click(sender As Object, e As EventArgs)
-    '    SetCategory("EDUC")
-    'End Sub
 
     Private Sub Category_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna2Button10.Enabled = False
@@ -21,12 +9,6 @@
         My.Settings.Save()
 
         Guna2Button10.Enabled = True
-
-        'Game.Show()
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
@@ -69,4 +51,5 @@
         Game.Show()
         Me.Close()
     End Sub
+
 End Class
