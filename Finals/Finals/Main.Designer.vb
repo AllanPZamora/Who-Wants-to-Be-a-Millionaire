@@ -24,46 +24,50 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Play = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Options = New System.Windows.Forms.Button()
+        Me.About = New System.Windows.Forms.Button()
+        Me.Quit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Play
         '
-        Me.Play.Location = New System.Drawing.Point(370, 241)
+        Me.Play.Font = New System.Drawing.Font("Bahnschrift", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Play.Location = New System.Drawing.Point(310, 246)
         Me.Play.Name = "Play"
         Me.Play.Size = New System.Drawing.Size(124, 53)
         Me.Play.TabIndex = 0
         Me.Play.Text = "Play"
         Me.Play.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Options
         '
-        Me.Button2.Location = New System.Drawing.Point(211, 388)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 53)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Options.Font = New System.Drawing.Font("Bahnschrift", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Options.Location = New System.Drawing.Point(151, 346)
+        Me.Options.Name = "Options"
+        Me.Options.Size = New System.Drawing.Size(124, 53)
+        Me.Options.TabIndex = 1
+        Me.Options.Text = "Options"
+        Me.Options.UseVisualStyleBackColor = True
         '
-        'Button3
+        'About
         '
-        Me.Button3.Location = New System.Drawing.Point(370, 388)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(124, 53)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.About.Font = New System.Drawing.Font("Bahnschrift", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.About.Location = New System.Drawing.Point(310, 346)
+        Me.About.Name = "About"
+        Me.About.Size = New System.Drawing.Size(124, 53)
+        Me.About.TabIndex = 2
+        Me.About.Text = "About"
+        Me.About.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Quit
         '
-        Me.Button4.Location = New System.Drawing.Point(531, 388)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(124, 53)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Quit.Font = New System.Drawing.Font("Bahnschrift", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Quit.Location = New System.Drawing.Point(471, 346)
+        Me.Quit.Name = "Quit"
+        Me.Quit.Size = New System.Drawing.Size(124, 53)
+        Me.Quit.TabIndex = 3
+        Me.Quit.Text = "Quit"
+        Me.Quit.UseVisualStyleBackColor = True
         '
         'Main
         '
@@ -71,10 +75,10 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(824, 468)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(741, 434)
+        Me.Controls.Add(Me.Quit)
+        Me.Controls.Add(Me.About)
+        Me.Controls.Add(Me.Options)
         Me.Controls.Add(Me.Play)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
@@ -86,7 +90,7 @@ Partial Class Main
     End Sub
 
     Friend WithEvents Play As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Options As Button
+    Friend WithEvents About As Button
+    Friend WithEvents Quit As Button
 End Class

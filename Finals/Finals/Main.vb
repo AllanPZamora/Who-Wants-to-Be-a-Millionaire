@@ -27,6 +27,14 @@
         Me.Hide()
     End Sub
 
+    Private Sub About_Click(sender As Object, e As EventArgs) Handles About.Click
+
+    End Sub
+
+    Private Sub Options_Click(sender As Object, e As EventArgs) Handles Options.Click
+
+    End Sub
+
     'Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
     '    Category.Show()
     'End Sub
